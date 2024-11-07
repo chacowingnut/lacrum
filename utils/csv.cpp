@@ -6,7 +6,7 @@
 using namespace std;
 
 
-void CSVTable::add_col(string col_name, float* val_link) {
+void CSVTable::add_col(string col_name, double* val_link) {
     if (row_added) {
         cerr << "You've already started chalking up rows!" << endl;
     } else {

@@ -8,7 +8,7 @@ using namespace std;
 
 
 /**
- * A class for managing float data that will ultimately end up in
+ * A class for managing double data that will ultimately end up in
  * a CSV for plotting with Python/JS/Winplot/Excel
  */
 struct CSVTable {
@@ -20,7 +20,7 @@ struct CSVTable {
     /**
      * Pointers to the variables that correspond to the column values
      */
-    vector<float*> val_links;
+    vector<double*> val_links;
 
     /**
      * Whether the class has started accumulating table data. We
@@ -33,7 +33,7 @@ struct CSVTable {
      */
     string output;
 
-    void add_col(string col_name, float* val_link);
+    void add_col(string col_name, double* val_link);
 
     string make_header();
 
