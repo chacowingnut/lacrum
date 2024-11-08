@@ -1,3 +1,4 @@
 .vscode*
 *deleteme*
 **/a.out
+.venv
